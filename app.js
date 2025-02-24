@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/visit', async (req, res) => {
-  const targetUrl = 'https://clever-gingersnap-c3876f.netlify.app/.netlify/functions/api/'; // Replace with the desired URL
+  const targetUrl = 'https://vermillion-rugelach-98a7a5.netlify.app/.netlify/functions/api/'; // Replace with the desired URL
   const scraperUrl = `http://api.scraperapi.com?api_key=${SCRAPER_API_KEY}&url=${encodeURIComponent(targetUrl)}`;
   const requests = Array.from({ length: 1}, () => axios.get(scraperUrl));
   
