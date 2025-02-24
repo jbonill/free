@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const app = express();
 const port = process.env.PORT || 3000;
-const SCRAPER_API_KEY = '296515e2fefd64214469869107dc0115'; // Replace with your actual ScraperAPI key
+const SCRAPER_API_KEY = '6e0a6c0b50de71553cc03aa1a89c0e32'; // Replace with your actual ScraperAPI key
 
 app.get('/', (req, res) => {
   res.json({ message: 'Hello, world!' });
